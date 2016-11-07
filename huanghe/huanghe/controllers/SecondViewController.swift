@@ -13,6 +13,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        RunLoopObserver.observerRunLoop()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,7 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
 
 }
 

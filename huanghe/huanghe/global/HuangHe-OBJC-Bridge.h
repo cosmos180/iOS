@@ -9,5 +9,6 @@
 #ifndef HuangHe_OBJC_Bridge_h
 #define HuangHe_OBJC_Bridge_h
 
+#import "RunLoopObserver.h"
 
 #endif /* HuangHe_OBJC_Bridge_h */

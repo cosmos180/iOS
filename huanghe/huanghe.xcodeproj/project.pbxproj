@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49271CE41D72E90C008BB7D4 /* HHPerformanceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 49271CE31D72E90C008BB7D4 /* HHPerformanceMonitor.m */; };
 		49BB26041D6DDE690028C0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BB26031D6DDE690028C0ED /* AppDelegate.swift */; };
 		49BB260B1D6DDE690028C0ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BB26091D6DDE690028C0ED /* Main.storyboard */; };
 		49BB260D1D6DDE690028C0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BB260C1D6DDE690028C0ED /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 		49BB26391D6DE1420028C0ED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BB26371D6DE1420028C0ED /* SecondViewController.swift */; };
 		49BB26431D6DE38F0028C0ED /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BB26421D6DE38F0028C0ED /* MainTabBarController.swift */; };
 		49BB26451D6DE4BF0028C0ED /* AboutHuangHe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BB26441D6DE4BF0028C0ED /* AboutHuangHe.swift */; };
+		49BB26491D6E93800028C0ED /* RunLoopObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BB26481D6E93800028C0ED /* RunLoopObserver.m */; };
+		49BB264C1D6ECB3F0028C0ED /* HHRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BB264B1D6ECB3F0028C0ED /* HHRunLoop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49271CE21D72E90C008BB7D4 /* HHPerformanceMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHPerformanceMonitor.h; sourceTree = "<group>"; };
+		49271CE31D72E90C008BB7D4 /* HHPerformanceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHPerformanceMonitor.m; sourceTree = "<group>"; };
 		49BB26001D6DDE690028C0ED /* huanghe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huanghe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BB26031D6DDE690028C0ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49BB260A1D6DDE690028C0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +59,10 @@
 		49BB26411D6DE2EE0028C0ED /* HuangHe-OBJC-Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HuangHe-OBJC-Bridge.h"; sourceTree = "<group>"; };
 		49BB26421D6DE38F0028C0ED /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		49BB26441D6DE4BF0028C0ED /* AboutHuangHe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutHuangHe.swift; sourceTree = "<group>"; };
+		49BB26471D6E93800028C0ED /* RunLoopObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopObserver.h; sourceTree = "<group>"; };
+		49BB26481D6E93800028C0ED /* RunLoopObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopObserver.m; sourceTree = "<group>"; };
+		49BB264A1D6ECB3F0028C0ED /* HHRunLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRunLoop.h; sourceTree = "<group>"; };
+		49BB264B1D6ECB3F0028C0ED /* HHRunLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRunLoop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +113,7 @@
 		49BB26021D6DDE690028C0ED /* huanghe */ = {
 			isa = PBXGroup;
 			children = (
+				49BB26461D6E933E0028C0ED /* runloop */,
 				49BB26351D6DE1420028C0ED /* controllers */,
 				49BB26331D6DDFE80028C0ED /* global */,
 				49BB26031D6DDE690028C0ED /* AppDelegate.swift */,
@@ -150,6 +160,19 @@
 				49BB26441D6DE4BF0028C0ED /* AboutHuangHe.swift */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		49BB26461D6E933E0028C0ED /* runloop */ = {
+			isa = PBXGroup;
+			children = (
+				49BB26471D6E93800028C0ED /* RunLoopObserver.h */,
+				49BB26481D6E93800028C0ED /* RunLoopObserver.m */,
+				49BB264A1D6ECB3F0028C0ED /* HHRunLoop.h */,
+				49BB264B1D6ECB3F0028C0ED /* HHRunLoop.m */,
+				49271CE21D72E90C008BB7D4 /* HHPerformanceMonitor.h */,
+				49271CE31D72E90C008BB7D4 /* HHPerformanceMonitor.m */,
+			);
+			path = runloop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,13 +243,17 @@
 				TargetAttributes = {
 					49BB25FF1D6DDE690028C0ED = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 45UMHTVC2V;
+						LastSwiftMigration = 0800;
 					};
 					49BB26151D6DDE690028C0ED = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 49BB25FF1D6DDE690028C0ED;
 					};
 					49BB26201D6DDE690028C0ED = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 49BB25FF1D6DDE690028C0ED;
 					};
 				};
@@ -284,6 +311,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				49BB26391D6DE1420028C0ED /* SecondViewController.swift in Sources */,
+				49BB26491D6E93800028C0ED /* RunLoopObserver.m in Sources */,
+				49BB264C1D6ECB3F0028C0ED /* HHRunLoop.m in Sources */,
+				49271CE41D72E90C008BB7D4 /* HHPerformanceMonitor.m in Sources */,
 				49BB26041D6DDE690028C0ED /* AppDelegate.swift in Sources */,
 				49BB26431D6DE38F0028C0ED /* MainTabBarController.swift in Sources */,
 				49BB26381D6DE1420028C0ED /* FirstViewController.swift in Sources */,
@@ -430,12 +460,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 45UMHTVC2V;
 				INFOPLIST_FILE = huanghe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antyme.huanghe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "huanghe/global/HuangHe-OBJC-Bridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -444,11 +476,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 45UMHTVC2V;
 				INFOPLIST_FILE = huanghe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antyme.huanghe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "huanghe/global/HuangHe-OBJC-Bridge.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -460,6 +494,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antyme.huangheTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/huanghe.app/huanghe";
 			};
 			name = Debug;
@@ -472,6 +507,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antyme.huangheTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/huanghe.app/huanghe";
 			};
 			name = Release;
@@ -483,6 +519,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antyme.huangheUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = huanghe;
 			};
 			name = Debug;
@@ -494,6 +531,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antyme.huangheUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = huanghe;
 			};
 			name = Release;
@@ -517,6 +555,7 @@
 				49BB262C1D6DDE690028C0ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49BB262D1D6DDE690028C0ED /* Build configuration list for PBXNativeTarget "huangheTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +564,7 @@
 				49BB262F1D6DDE690028C0ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49BB26301D6DDE690028C0ED /* Build configuration list for PBXNativeTarget "huangheUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +573,7 @@
 				49BB26321D6DDE690028C0ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
